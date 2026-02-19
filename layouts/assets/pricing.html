@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    
+<!-- Mirrored from shreethemes.in/edupath_html/layouts/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 09:57:56 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <title>Edupath - Online Courses & Education HTML5 Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Real Estate Website Landing Page" name="description" />
+        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="website" content="https://shreethemes.in/" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="version" content="1.0.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+    
+    <body class="dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Start Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline-block relative me-1">
+                        <button class="text-[20px]" onclick="navbarSearch.showModal()" type="button">
+                            <i class="iconoir-search align-middle login-btn-primary"></i>
+                            <i class="iconoir-search text-white align-middle login-btn-light"></i>
+                        </button>                
+                    </li>
+
+                    <li class="dropdown inline-block relative">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary border border-primary text-white" type="button">
+                            <i data-feather="shopping-cart" class="size-4"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-60 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-3 text-start" aria-labelledby="dropdownDefault">
+                                <li class="px-3">Your shopping cart is empty.</li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li class="dropdown inline-block relative">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                            <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-primary border border-primary text-white"><img src="assets/images/team/1.jpg" class="rounded-full size-7.5" alt=""></span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-44 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-700 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-2 text-start">
+                                <li>
+                                    <a href="#" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i data-feather="user" class="size-4 me-2"></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i data-feather="settings" class="size-4 me-2"></i>Settings</a>
+                                </li>
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                                <li>
+                                    <a href="#" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i data-feather="lock" class="size-4 me-2"></i>Lockscreen</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-primary dark:hover:text-white"><i data-feather="log-out" class="size-4 me-2"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><!--end dropdown-->
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-start nav-light">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index.html" class="sub-menu-item">
+                                                <div class="lg_992:text-center">
+                                                    <span class="hidden lg_992:block"><img src="assets/images/demos/1.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg_992:mt-2 block">Hero One</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-two.html" class="sub-menu-item">
+                                                <div class="lg_992:text-center">
+                                                    <span class="hidden lg_992:block"><img src="assets/images/demos/2.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg_992:mt-2 block">Hero Two</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-three.html" class="sub-menu-item">
+                                                <div class="lg_992:text-center">
+                                                    <span class="hidden lg_992:block"><img src="assets/images/demos/3.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg_992:mt-2 block">Hero Three</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-four.html" class="sub-menu-item">
+                                                <div class="lg_992:text-center">
+                                                    <span class="hidden lg_992:block"><img src="assets/images/demos/4.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg_992:mt-2 block">Hero Four</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="index-five.html" class="sub-menu-item">
+                                                <div class="lg_992:text-center">
+                                                    <span class="hidden lg_992:block"><img src="assets/images/demos/5.png" class="img-fluid rounded shadow-md" alt=""></span>
+                                                    <span class="lg_992:mt-2 block">Hero Five</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Courses</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Grid Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="grid.html" class="sub-menu-item">Grid Listing</a></li>
+                                        <li><a href="grid-sidebar.html" class="sub-menu-item">Grid Sidebar </a></li>
+                                    </ul> 
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> List Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="list.html" class="sub-menu-item">List Listing</a></li>
+                                        <li><a href="list-sidebar.html" class="sub-menu-item">List Sidebar </a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Video Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="youtube-listing.html" class="sub-menu-item">Youtube Listing</a></li>
+                                        <li><a href="video-listing.html" class="sub-menu-item">Video Listing</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Courses Detail</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="course-detail.html" class="sub-menu-item">Courses Detail</a></li>
+                                        <li><a href="course-detail-two.html" class="sub-menu-item">Courses Detail Two</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="features.html" class="sub-menu-item">Features</a></li>
+                                <li><a href="pricing.html" class="sub-menu-item">Pricing</a></li>
+                                <li><a href="instructors.html" class="sub-menu-item">Instructors</a></li>
+                                <li><a href="faqs.html" class="sub-menu-item">Faqs</a></li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Auth Pages </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="login.html" class="sub-menu-item">Login</a></li>
+                                        <li><a href="signup.html" class="sub-menu-item">Signup</a></li>
+                                        <li><a href="forgot-password.html" class="sub-menu-item">Reset Password</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Blog </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="blogs.html" class="sub-menu-item"> Blogs</a></li>
+                                        <li><a href="blog-sidebar.html" class="sub-menu-item"> Blog Sidebar</a></li>
+                                        <li><a href="blog-detail.html" class="sub-menu-item"> Blog Detail</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="comingsoon.html" class="sub-menu-item">Comingsoon</a></li>
+                                        <li><a href="maintenance.html" class="sub-menu-item">Maintenance</a></li>
+                                        <li><a href="404.html" class="sub-menu-item">404! Error</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Searchbar modal -->
+        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20 mx-auto">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Searchbar modal -->
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 text-center mt-10">
+                    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">Pricing Plans</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section class="relative lg:py-24 py-16">
+            <div class="container relative">
+                <div class="lg:flex justify-center">
+                    <div class="lg:w-4/5">
+                        <div class="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-md shadow-slate-100 dark:shadow-slate-800 transition-all duration-500">
+                            <div class="md:w-36">
+                                <h3 class="text-xl text-primary font-semibold">Weekly</h3>
+                        
+                                <div class="flex mt-3">
+                                    <span class="text-lg">$</span>
+                                    <span class="text-2xl font-semibold">9</span>
+                                    <span class="text-lg self-end">/ Week</span>
+                                </div>
+                            </div>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Full Access</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Source Files</li>
+                            </ul>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Free Appointments</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Enhanced Security</li>
+                            </ul>
+
+                            <div class="md:w-36 md:text-end">
+                                <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md border border-primary/20 hover:bg-primary text-primary hover:text-white text-sm md:mt-0 mt-4">Login Now</a>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-md shadow-slate-100 dark:shadow-slate-800 transition-all duration-500 mt-6">
+                            <div class="md:w-36">
+                                <h3 class="text-xl text-primary font-semibold">Monthly</h3>
+                        
+                                <div class="flex mt-3">
+                                    <span class="text-lg">$</span>
+                                    <span class="text-2xl font-semibold">29</span>
+                                    <span class="text-lg self-end">/ Month</span>
+                                </div>
+                            </div>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Full Access</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Source Files</li>
+                            </ul>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Free Appointments</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Enhanced Security</li>
+                            </ul>
+
+                            <div class="md:w-36 md:text-end">
+                                <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-primary/10 hover:bg-primary text-primary hover:text-white text-sm md:mt-0 mt-4">Join Now</a>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="group md:flex items-center justify-between p-6 rounded-lg shadow-sm hover:shadow-md shadow-slate-100 dark:shadow-slate-800 transition-all duration-500 mt-6">
+                            <div class="md:w-36">
+                                <h3 class="text-xl text-primary font-semibold">Yearly</h3>
+                        
+                                <div class="flex mt-3">
+                                    <span class="text-lg">$</span>
+                                    <span class="text-2xl font-semibold">299</span>
+                                    <span class="text-lg self-end">/ Year</span>
+                                </div>
+                            </div>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Full Access</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Source Files</li>
+                            </ul>
+
+                            <ul class="list-none">
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Free Appointments</li>
+                                <li class="text-slate-400 mt-2"><span class="text-primary text-lg me-2"><i class="iconoir-check-circle align-middle"></i></span>Enhanced Security</li>
+                            </ul>
+
+                            <div class="md:w-36 md:text-end">
+                                <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-primary text-white text-sm md:mt-0 mt-4">Subscribe Now</a>
+                            </div>
+                        </div><!--end content-->
+                    </div>
+                </div><!--end-->
+            </div><!--end container-->
+
+            <div class="container relative md:mt-24 mt-16">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+                    <div class="lg:col-span-6 md:col-span-7">
+                        <div class="relative">
+                            <div class="relative md:shrink-0 lg:mx-0 mx-5">
+                                <img class="object-cover md:w-96 w-84 h-125 rounded-lg shadow-md dark:shadow-gyay-700" src="assets/images/course/4.jpg" alt="">
+                            </div>
+
+                            <div class="absolute bottom-10 lg:end-6 end-0">
+                                <div class="relative z-1 top-10 xl:text-start lg:text-end text-end">
+                                    <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-primary text-white">
+                                        <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+                                    </a>
+                                </div>
+    
+                                <div class="relative md:shrink-0">
+                                    <img class="object-cover size-48 rounded-lg shadow-md dark:shadow-gyay-700" src="assets/images/course/2.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="absolute md:top-16 top-12 md:-start-10 -start-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 z-2 mover">
+                                <h5 class="font-semibold mb-3">Our Instrunctors</h5>
+                                
+                                <ul class="list-none relative">
+                                    <li class="inline-block relative"><a href="#"><img src="assets/images/team/1.jpg" class="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""></a></li>
+                                    <li class="inline-block relative -ms-4"><a href="#"><img src="assets/images/team/2.jpg" class="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""></a></li>
+                                    <li class="inline-block relative -ms-4"><a href="#"><img src="assets/images/team/3.jpg" class="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""></a></li>
+                                    <li class="inline-block relative -ms-4"><a href="#"><img src="assets/images/team/4.jpg" class="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""></a></li>
+                                    <li class="inline-block relative -ms-4"><a href="#"><img src="assets/images/team/5.jpg" class="size-10 rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 border-4 border-white dark:border-slate-900 relative hover:z-1 hover:scale-105 transition-all duration-500" alt=""></a></li>
+                                    <li class="inline-block relative -ms-4"><a href="#" class="size-9 table-cell tracking-wide align-middle text-base text-center rounded-full bg-primary text-white hover:z-1 hover:scale-105 transition-all duration-500"><i class="mdi mdi-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-6 md:col-span-5">
+                        <h4 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Questions & Answers</h4>
+                        <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+
+                        <div id="accordion-collapseone" data-accordion="collapse" class="mt-6">
+                            <div class="relative shadow-sm dark:shadow-gray-700 rounded-md overflow-hidden">
+                                <h2 class="font-medium" id="accordion-collapse-heading-1">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                        <span>How does it work ?</span>
+                                        <svg data-accordion-icon class="size-5 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-sm dark:shadow-gray-700 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-2">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                                        <span>Do I need a designer to use Edupath ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative shadow-sm dark:shadow-gray-700 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-3">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                                        <span>What do I need to do to start selling ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="relative shadow-sm dark:shadow-gray-700 rounded-md overflow-hidden mt-4">
+                                <h2 class="font-medium" id="accordion-collapse-heading-4">
+                                    <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-start" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                                        <span>What happens when I receive an order ?</span>
+                                        <svg data-accordion-icon class="size-5 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                                    <div class="p-5">
+                                        <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="container relative lg:mt-24 mt-16">
+                <div class="grid grid-cols-1 text-center">
+                    <h3 class="mb-6 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Have Question ? Get in touch!</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                
+                    <div class="mt-6">
+                        <a href="contact.html" class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-primary text-white"><i class="iconoir-phone align-middle me-2"></i> Contact us</a>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start Footer -->
+        <footer class="relative bg-slate-900 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1">
+                    <div class="relative py-16">
+                        <!-- Subscribe -->
+                        <div class="relative w-full">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+
+                                    <div class="flex mt-6">
+                                        <i class="iconoir-map-pin align-middle text-2xl text-primary me-2"></i>
+                                        <div class="">
+                                            <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="flex mt-4">
+                                        <i class="iconoir-phone align-middle text-2xl text-primary me-2"></i>
+                                        <div class="">
+                                            <a href="tel:+152534-468-854" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152 534-468-854</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission & Vision</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a Career</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom Meeting</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing Plan</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact Us</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
+                                        <li class="mt-2.5"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
+                                    </ul>
+                                </div><!--end col-->
+    
+                                <div class="lg:col-span-4 md:col-span-6">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Get In Touch</h5>
+                            
+                                    <div class="mt-6">
+                                        <a href="#"><img src="assets/images/app.png" class="h-12 inline-block mb-1" alt=""></a>
+                                        <a href="#"><img src="assets/images/play.png" class="h-12 inline-block mb-1" alt=""></a>
+                                    </div>
+
+                                    <ul class="list-none mt-4">
+                                        <li class="inline"><a href="https://1.envato.market/edupath-html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-cart"></i></a></li>
+                                        <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-dribbble"></i></a></li>
+                                        <li class="inline"><a href="https://www.behance.net/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-behance align-baseline"></i></a></li>
+                                        <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-linkedin"></i></a></li>
+                                        <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-facebook"></i></a></li>
+                                        <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-instagram"></i></a></li>
+                                        <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-x"></i></a></li>
+                                        <li class="inline"><a href="mailto:support@shreethemes.in" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-primary dark:hover:border-primary hover:bg-primary dark:hover:bg-primary"><i class="iconoir-mail"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div>
+                        <!-- Subscribe -->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="py-7.5 px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center gap-6">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-300">© <script>document.write(new Date().getFullYear())</script> Edupath. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+
+                        <ul class="list-disc footer-list md:text-end text-center space-x-3">
+                            <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
+                            <li class="inline-block mt-2.5 md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
+                            <li class="inline-block mt-2.5 md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="login.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- End Footer -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-primary text-white justify-center items-center"><i data-feather="arrow-up" class="size-4"></i></a>
+        <!-- Back to top -->
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-15 h-8" for="chk">
+                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
+                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-0.5 left-0.5 size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-[40%] -right-3 z-50">
+            <a href="#" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+
+<!-- Mirrored from shreethemes.in/edupath_html/layouts/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 09:57:56 GMT -->
+</html>
